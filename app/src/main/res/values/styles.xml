@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- styles.xml -->
+    <style name="intru_txt">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#003049</item>
+    </style>
+
+    <style name="slogan">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#DCA85E</item>
+    </style>
+</resources>
