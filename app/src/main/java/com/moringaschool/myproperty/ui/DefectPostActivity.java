@@ -30,7 +30,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.moringaschool.myproperty.ui.models.Defect;
+import com.moringaschool.myproperty.models.Defect;
 
 public class DefectPostActivity extends AppCompatActivity {
     private static final int PERMISSION_CODE = 1000;

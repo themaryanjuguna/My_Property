@@ -1,18 +1,16 @@
-package com.moringaschool.myproperty.ui.fragments;
+package com.moringaschool.myproperty.fragments;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.moringaschool.myproperty.R;
 import com.moringaschool.myproperty.databinding.FragmentPropertyBinding;
-import com.moringaschool.myproperty.ui.models.Property;
+import com.moringaschool.myproperty.models.Property;
 
 
 public class PropertyFragment extends Fragment {

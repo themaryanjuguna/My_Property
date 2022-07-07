@@ -1,4 +1,4 @@
-package com.moringaschool.myproperty.ui.adapters;
+package com.moringaschool.myproperty.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.moringaschool.myproperty.R;
 import com.moringaschool.myproperty.ui.PropertyDetailsActivity;
-import com.moringaschool.myproperty.ui.models.Property;
+import com.moringaschool.myproperty.models.Property;
 
 import java.io.Serializable;
 import java.util.List;

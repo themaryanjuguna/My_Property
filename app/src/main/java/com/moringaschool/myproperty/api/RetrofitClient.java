@@ -1,6 +1,6 @@
-package com.moringaschool.myproperty.ui.api;
+package com.moringaschool.myproperty.api;
 
-import com.moringaschool.myproperty.ui.models.Constants;
+import com.moringaschool.myproperty.models.Constants;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

@@ -6,10 +6,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.moringaschool.myproperty.R;
 import com.moringaschool.myproperty.databinding.ActivityPropertyDetailsBinding;
-import com.moringaschool.myproperty.ui.adapters.PagerAdapter;
-import com.moringaschool.myproperty.ui.models.Property;
+import com.moringaschool.myproperty.adapters.PagerAdapter;
+import com.moringaschool.myproperty.models.Property;
 
 import java.util.ArrayList;
 import java.util.List;

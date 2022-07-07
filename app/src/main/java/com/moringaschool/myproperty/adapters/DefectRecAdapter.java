@@ -1,4 +1,4 @@
-package com.moringaschool.myproperty.ui.adapters;
+package com.moringaschool.myproperty.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.imageview.ShapeableImageView;
 import com.moringaschool.myproperty.R;
-import com.moringaschool.myproperty.ui.models.Defect;
+import com.moringaschool.myproperty.models.Defect;
 
 import java.util.List;
 

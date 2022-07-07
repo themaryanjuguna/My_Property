@@ -1,4 +1,4 @@
-package com.moringaschool.myproperty.ui.adapters;
+package com.moringaschool.myproperty.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.moringaschool.myproperty.ui.fragments.PropertyFragment;
-import com.moringaschool.myproperty.ui.models.Property;
+import com.moringaschool.myproperty.fragments.PropertyFragment;
+import com.moringaschool.myproperty.models.Property;
 
 import java.util.List;
 

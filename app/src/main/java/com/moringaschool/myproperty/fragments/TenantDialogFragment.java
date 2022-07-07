@@ -1,6 +1,7 @@
-package com.moringaschool.myproperty.ui.fragments;
+package com.moringaschool.myproperty.fragments;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.moringaschool.myproperty.R;
 import com.moringaschool.myproperty.databinding.AddTenantBinding;
-import com.moringaschool.myproperty.ui.PropertiesActivity;
-import com.moringaschool.myproperty.ui.api.ApiCalls;
-import com.moringaschool.myproperty.ui.api.RetrofitClient;
-import com.moringaschool.myproperty.ui.models.Property;
-import com.moringaschool.myproperty.ui.models.Tenant;
+import com.moringaschool.myproperty.api.ApiCalls;
+import com.moringaschool.myproperty.api.RetrofitClient;
+import com.moringaschool.myproperty.models.Property;
+import com.moringaschool.myproperty.models.Tenant;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -59,9 +58,9 @@ public class TenantDialogFragment extends DialogFragment {
                     @Override
                     public void onResponse(Call<Tenant> call, Response<Tenant> response) {
                         if (response.isSuccessful()){
-                            Toast.makeText(getActivity(), "Successfully done", Toast.LENGTH_SHORT).show();
+                            Log.d("TAG", "onSuccess: Successfully" );
                         }else{
-                            Toast.makeText(getActivity(), "Whats up yoo", Toast.LENGTH_SHORT).show();
+                            Log.d("TAG", "onFailure: failed");
 
                         }
                     }
@@ -69,7 +68,7 @@ public class TenantDialogFragment extends DialogFragment {
                     @Override
                     public void onFailure(Call<Tenant> call, Throwable t) {
                         String error = t.getMessage();
-                        Toast.makeText(getActivity(), error, Toast.LENGTH_SHORT).show();
+                        Log.d("TAG", "onFailure: "+ error);
                     }
                 });
 

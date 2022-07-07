@@ -12,10 +12,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.moringaschool.myproperty.R;
 import com.moringaschool.myproperty.databinding.ActivityDefectBinding;
-import com.moringaschool.myproperty.ui.adapters.DefectRecAdapter;
-import com.moringaschool.myproperty.ui.models.Defect;
+import com.moringaschool.myproperty.adapters.DefectRecAdapter;
+import com.moringaschool.myproperty.models.Defect;
 
 import java.util.ArrayList;
 import java.util.List;

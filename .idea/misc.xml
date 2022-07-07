@@ -3,29 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="app/src/main/res/drawable/add_property_style.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/bg.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/camera_icon_size.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/contractors_style.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/grid_style.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/ic_back_arrow_back.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.147" />
+        <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/ic_menu_24.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/image.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/list_of_properties_style.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/maintenance_request_style.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/text_view_radius.xml" value="0.147" />
-=======
-        <entry key="app/src/main/res/layout/activity_defect.xml" value="0.3229166666666667" />
->>>>>>> e36fcac3591ccc98b78549375831a51a9a6549ec
+        <entry key="app/src/main/res/layout/activity_defect.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_defect_post.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_defect_post2.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1984375" />
         <entry key="app/src/main/res/layout/activity_manager_dashboard.xml" value="0.333786231884058" />
-        <entry key="app/src/main/res/layout/activity_manager_dashboard2.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_manager_dashboard2.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_properties.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_property_details.xml" value="0.25967741935483873" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/add_building.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/add_maintenance_request.xml" value="0.333786231884058" />
-        <entry key="app/src/main/res/layout/add_property_manager.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/add_property_manager.xml" value="0.26706827309236947" />
         <entry key="app/src/main/res/layout/add_tenant.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/fragment_property.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/property.xml" value="0.3229166666666667" />
