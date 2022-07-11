@@ -5,12 +5,16 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.2028985507246377" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/add_property_style.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/contractors_style.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/ic_back_arrow_back.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.206" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.206" />
+        <entry key="app/src/main/res/drawable/ic_menu_24.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/maintenance_request_style.xml" value="0.165" />
         <entry key="app/src/main/res/font/candal.xml" value="0.22864583333333333" />
         <entry key="app/src/main/res/layout/activity_defect.xml" value="0.3229166666666667" />
         <entry key="app/src/main/res/layout/activity_defect_post.xml" value="0.3229166666666667" />
