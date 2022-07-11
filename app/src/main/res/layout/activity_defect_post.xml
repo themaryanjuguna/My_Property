@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center_horizontal"
+tools:context=".ui.DefectPostActivity">
+
+<ImageView
+    android:id="@+id/image_view"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_baseline_image_24"
+    android:layout_width="350dp"
+    android:layout_height="350dp"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/capture_image_btn"
+    android:text="Capture Image"
+    android:padding="8dp"
+    style="@style/Widget.AppCompat.Button.Colored"/>
+
+<EditText
+    android:id="@+id/defectDescriptionEditText"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:ems="10"
+    android:gravity="start|top"
+    android:hint="Description of Defect"
+    android:inputType="textMultiLine" />
+
+<AutoCompleteTextView
+    android:id="@+id/buildingNameET"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:padding="8dp"
+    android:inputType="textPersonName"
+    android:hint="Select name of the building" />
+
+<EditText
+    android:id="@+id/houseNumberET"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:padding="8dp"
+    android:inputType="textPersonName"
+    android:hint="Enter the house number" />
+
+<!--<AutoCompleteTextView-->
+<!--    android:id="@+id/tenantNameET"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:padding="8dp"-->
+<!--    android:hint="Select tenants name" />-->
+
+<Button
+    android:id="@+id/submitDefectBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:padding="8dp"
+    style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>
