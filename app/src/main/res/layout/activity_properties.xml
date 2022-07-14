@@ -30,7 +30,6 @@
         app:layout_constraintRight_toLeftOf="@id/animation_view"
         app:layout_constraintBottom_toBottomOf="@id/animation_view"
         app:strokeWidth="1dp"
-        app:shapeAppearanceOverlay="@style/roundedImageView"
         app:strokeColor="@color/black" />
 
     <TextView
