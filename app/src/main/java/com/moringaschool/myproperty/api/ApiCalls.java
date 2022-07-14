@@ -11,6 +11,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
@@ -75,6 +76,11 @@ public interface ApiCalls {
     @GET("/tenantDefects/{tenantId}")
     Call<List<Defect>> tenantDefects(
             @Path("tenantId") String tenantId
+    );
+
+    @DELETE("/deleteDefect/{id}")
+    Call<Defect> deleteDefect(
+            @Path("id") String tenantId
     );
 
     @POST("/doneDefect")
