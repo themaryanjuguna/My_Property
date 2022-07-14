@@ -79,8 +79,8 @@ public interface ApiCalls {
     );
 
     @DELETE("/deleteDefect/{id}")
-    Call<Defect> deleteDefect(
-            @Path("id") String tenantId
+    Call<List<Defect>> deleteDefect(
+            @Path("id") int defectId
     );
 
     @POST("/doneDefect")

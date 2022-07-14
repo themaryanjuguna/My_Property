@@ -30,12 +30,16 @@ import com.moringaschool.myproperty.models.Constants;
 import com.moringaschool.myproperty.models.Defect;
 import com.moringaschool.myproperty.models.DoneDefect;
 import com.moringaschool.myproperty.models.Tenant;
+import com.moringaschool.myproperty.ui.PropertiesActivity;
 import com.moringaschool.myproperty.ui.TenantDashboardActivity;
 import com.moringaschool.myproperty.ui.TenantLoginActivity;
 import com.squareup.picasso.Picasso;
 
 import java.io.Serializable;
 import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -48,6 +52,7 @@ public class DefectFragment extends Fragment {
     String tenantId;
     BottomSheetDialog dialog;
     Call<DoneDefect> call;
+    Call<List<Defect>> defectDeleteCall;
     ApiCalls calls;
 
     public DefectFragment() {
@@ -157,9 +162,29 @@ public class DefectFragment extends Fragment {
                     public void onResponse(Call<DoneDefect> call, Response<DoneDefect> response) {
                         if(response.isSuccessful()){
                             Toast.makeText(getContext(), "Assigned a contractor", Toast.LENGTH_SHORT).show();
-                        }
-                        dialog.dismiss();
+                            dialog.dismiss();
 
+                            defectDeleteCall = calls.deleteDefect(defect.getId());
+                            defectDeleteCall.enqueue(new Callback<List<Defect>>() {
+                                        @Override
+                                        public void onResponse(Call<List<Defect>> call, Response<List<Defect>> response) {
+                                            if (response.body() != null){
+                                                List<Defect> remDefs = new ArrayList<>();
+                                                remDefs = response.body();
+                                            }
+                                        }
+
+                                        @Override
+                                        public void onFailure(Call<List<Defect>> call, Throwable t) {
+                                            String error = t.getMessage();
+                                            Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
+
+                                        }
+                                    });
+
+                            startActivity(new Intent(getContext(), PropertiesActivity.class));
+
+                        }
                     }
 
                     @Override

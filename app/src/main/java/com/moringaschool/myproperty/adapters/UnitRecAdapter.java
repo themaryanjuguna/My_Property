@@ -28,6 +28,7 @@ import com.moringaschool.myproperty.models.Constants;
 import com.moringaschool.myproperty.models.Tenant;
 import com.moringaschool.myproperty.models.Unit;
 
+import java.text.DateFormat;
 import java.util.List;
 
 import retrofit2.Call;
@@ -37,6 +38,9 @@ import retrofit2.Response;
 public class UnitRecAdapter extends RecyclerView.Adapter<UnitRecAdapter.myHolder> {
     List<Unit> allUnits;
     Context cont;
+    Call<Tenant> call;
+    ApiCalls calls;
+    Tenant tenant;
 
     public UnitRecAdapter(List<Unit> allUnits, Context cont) {
         this.allUnits = allUnits;
@@ -53,6 +57,32 @@ public class UnitRecAdapter extends RecyclerView.Adapter<UnitRecAdapter.myHolder
     @Override
     public void onBindViewHolder(@NonNull myHolder holder, int position) {
         holder.setData(allUnits.get(position));
+
+        calls = RetrofitClient.getClient();
+        call = calls.getTenant(allUnits.get(position).getUnitName());
+
+        call.enqueue(new Callback<Tenant>() {
+            @Override
+            public void onResponse(Call<Tenant> call, Response<Tenant> response) {
+                if (response.body() != null){
+                    tenant = response.body();
+                    holder.tenantName1.setText("Occupied by: "+tenant.getTenant_name());
+                    holder.tenantPhone2.setText(tenant.getTenant_phone());
+                    String date = DateFormat.getDateTimeInstance().format(tenant.getJoined());
+                    holder.unitRooms.setText(date);
+                    holder.add.setVisibility(View.GONE);
+                }else{
+                    holder.tenantName1.setText("Vacant");
+                    holder.tenantPhone2.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Tenant> call, Throwable t) {
+                String error = t.getMessage();
+                Toast.makeText(cont, error, Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
