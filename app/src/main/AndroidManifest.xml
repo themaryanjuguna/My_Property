@@ -3,18 +3,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.moringaschool.myproperty">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/goldlogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/goldlogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProperty"
         tools:targetApi="31">
         <activity
+            android:name=".ui.ManagersDoneDefects"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TenantsDoneDefects"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TenantMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TenantsDefectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DefectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TenantLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TenantDefectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TenantDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PropertyDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PropertiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DefectPostActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DefectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ManagerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ManagerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.TenantLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +81,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
