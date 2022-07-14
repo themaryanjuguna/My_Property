@@ -47,7 +47,7 @@ public class TenantsDoneDefects extends AppCompatActivity implements View.OnClic
         setContentView(tenBind.getRoot());
 
         pref = PreferenceManager.getDefaultSharedPreferences(this);
-        tenBind.managerName.setText("Hey, "+ pref.getString(Constants.DEFECT_MANAGER_NAME, "Charles"));
+        tenBind.managerName.setText("Hey, "+ pref.getString(Constants.TENANT_NAME, "Charles"));
 
         tenBind.add.setOnClickListener(this);
 
