@@ -1,5 +1,7 @@
 # MyProperty
-MyProperty is an android application that allows a manager to add their properties, tenants and also units in their respective properties.  
+
+MyProperty is an android application that allows a manager to add their properties, tenants and also units in their respective properties. 
+
 ## Contributors
 * *Mutheu Linet* - Scrum Master
 * *Maryanne Njuguna*
@@ -24,19 +26,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Fork the repo
 * Create a new branch
-
+ ```
   $ git switch -c (improve-feature)
-
+ ```
 * Make the required changes in the file.
 * Add changes to reflect the changes made.
 * Commit your changes.
-
+  ```
   $ git commit -am (improve-feature)
-
+  ```
 * Push to the branch
 
+  ```
   $ git push origin (improve-feature)
-
+   ```
+  
 * Create a Pull Request
 
 
